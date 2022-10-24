@@ -48,6 +48,7 @@ body .header .header__container div#home {
 }
 body #sectionHome, body #sectionNosotros, body #sectionServicios {
   padding-left: 23vw;
+  padding-top: 10rem;
   color: white;
   display: none;
 }
