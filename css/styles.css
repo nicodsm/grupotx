@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: black;
+}
+body .header .header__container div {
+  position: fixed;
+  cursor: pointer;
+  width: 8vw;
+  height: 100vh;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+body .header .header__container div .name {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+body .header .header__container div#nosotros {
+  background-color: pink;
+  z-index: 10;
+  transition: all 1.5s ease;
+}
+body .header .header__container div#servicios {
+  background-color: blue;
+  left: 8vw;
+  z-index: 9;
+  transition: all 1.5s ease;
+}
+body .header .header__container div#home {
+  background-color: green;
+  left: 0;
+  z-index: 8;
+  transition: all 1.5s ease;
+}
+body #sectionHome, body #sectionNosotros, body #sectionServicios {
+  padding-left: 23vw;
+  color: white;
+  display: none;
+}
+body #sectionHome.active, body #sectionNosotros.active, body #sectionServicios.active {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
