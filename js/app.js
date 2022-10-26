@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
                         setTimeout(() => {
                             pHome.style.opacity = '1'
                             pNosotros.style.opacity = '1'
-                        }, 1500);
-                    }, 1500);
-                }, 1500);
+                        }, 700);
+                    }, 700);
+                }, 700);
 
             } else {
 
@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
                             pServicios.style.opacity = '0'
                             pHome.style.opacity = '1'
                             pNosotros.style.opacity = '1'
-                        }, 1500);
-                    }, 1500);
-                }, 1500);
+                        }, 700);
+                    }, 700);
+                }, 700);
             }
 
         }
@@ -117,9 +117,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
                         setTimeout(() => {
                             pServicios.style.opacity = '1'
                             pNosotros.style.opacity = '1'
-                        }, 1500);
-                    }, 1500);
-                }, 1500);
+                        }, 700);
+                    }, 700);
+                }, 700);
             } else {
                 // nosotros activo
                 sectionHome.classList.add('active');
@@ -156,10 +156,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
                                 pNosotros.style.opacity = '1'
                                 pHome.style.opacity = '0'
                                 
-                            }, 1500);
-                        }, 1500);
-                    }, 1500);
-                }, 1500);
+                            }, 700);
+                        }, 700);
+                    }, 700);
+                }, 700);
             }
 
 
@@ -201,10 +201,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
                             setTimeout(() => {
                                 pHome.style.opacity = '1';
                                 pServicios.style.opacity = '1';
-                            }, 1500);
-                        }, 1500);
-                    }, 1500);
-                }, 1500);
+                            }, 700);
+                        }, 700);
+                    }, 700);
+                }, 700);
             } else {
                 // servicios activo
                 sectionHome.classList.remove('active');
@@ -237,9 +237,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
                             pHome.style.opacity = '1'
                             pNosotros.style.opacity = '0'
                             
-                        }, 1500);
-                    }, 1500);
-                }, 1500);
+                        }, 700);
+                    }, 700);
+                }, 700);
 
             }
 

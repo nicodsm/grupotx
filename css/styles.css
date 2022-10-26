@@ -30,30 +30,198 @@ body .header .header__container div .name {
   transition: all 0.3s ease-in-out;
 }
 body .header .header__container div#nosotros {
-  background-color: pink;
+  background-color: rgb(255, 136, 137);
   z-index: 10;
-  transition: all 1.5s ease;
+  transition: all 0.7s ease;
 }
 body .header .header__container div#servicios {
-  background-color: blue;
+  background-color: rgb(0, 85, 240);
   left: 8vw;
   z-index: 9;
-  transition: all 1.5s ease;
+  transition: all 0.7s ease;
 }
 body .header .header__container div#home {
-  background-color: green;
+  background-color: rgb(1, 227, 127);
   left: 0;
   z-index: 8;
-  transition: all 1.5s ease;
+  transition: all 0.7s ease;
+}
+body .header .header__container--content {
+  padding: 0 19vw;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .header .header__container--content .content--logo img {
+  height: 6rem;
+  filter: brightness(100) grayscale(1);
+}
+body .header .header__container--content .content--contacto a {
+  background-color: rgb(255, 136, 137);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4rem;
+  text-decoration: none;
+  gap: 7rem;
+  padding: 0.7rem 1rem;
+}
+body .header .header__container--content .content--contacto a p {
+  margin: 0;
 }
 body #sectionHome, body #sectionNosotros, body #sectionServicios {
-  padding-left: 23vw;
-  padding-top: 10rem;
   color: white;
   display: none;
 }
 body #sectionHome.active, body #sectionNosotros.active, body #sectionServicios.active {
   display: block;
+}
+body #sectionHome .header__container--content, body #sectionNosotros .header__container--content, body #sectionServicios .header__container--content {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #sectionHome .header__container--content .content--logo img, body #sectionNosotros .header__container--content .content--logo img, body #sectionServicios .header__container--content .content--logo img {
+  height: 6rem;
+  filter: brightness(100) grayscale(1);
+}
+body #sectionHome .header__container--content .content--contacto a, body #sectionNosotros .header__container--content .content--contacto a, body #sectionServicios .header__container--content .content--contacto a {
+  background-color: rgb(255, 136, 137);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4rem;
+  text-decoration: none;
+  gap: 7rem;
+  padding: 0.7rem 1rem;
+}
+body #sectionHome .header__container--content .content--contacto a p, body #sectionNosotros .header__container--content .content--contacto a p, body #sectionServicios .header__container--content .content--contacto a p {
+  margin: 0;
+}
+body #sectionHome .home__container {
+  padding-left: 20vw;
+  padding-right: 4vw;
+}
+body #sectionHome .home__container .home__container--hero .hero__content {
+  margin-top: 10rem;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--title p {
+  color: white;
+  font-weight: 900;
+  font-size: 8rem;
+  margin: 0;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--title p span {
+  color: rgb(1, 227, 127);
+  font-size: 6rem;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--info {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: end;
+}
+body #sectionHome .home__container .map {
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .iconos__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono img {
+  height: 10rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .logo img {
+  height: 6rem;
+  filter: brightness(100) grayscale(1);
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card {
+  background-color: rgb(1, 227, 127);
+  width: 20rem;
+  height: 25rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card .text {
+  padding: 3rem 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+body #sectionServicios .servicios__container {
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container {
+  height: 100vh;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content {
+  position: relative;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto {
+  position: absolute;
+  top: 30vh;
+  color: white;
+  font-weight: 900;
+  font-size: 10rem;
+  line-height: 9rem;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto span {
+  color: rgb(1, 227, 127);
+  font-size: 7rem;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--img {
+  position: absolute;
+  left: 37vw;
+  top: 5vw;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--img img {
+  height: 20rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--title h3 {
+  color: rgb(1, 227, 127);
+  font-weight: 900;
+  font-size: 4rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content {
+  margin-top: 10rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar {
+  display: flex;
+  margin-bottom: 5rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 5rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--img {
+  padding-left: 6rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--img img {
+  height: 10rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--texto span {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--texto p {
+  margin: 0;
+  margin-top: 2rem;
+}
+body #sectionNosotros .nosotros__container {
+  padding-right: 20vw;
+  padding-left: 4vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

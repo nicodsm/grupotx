@@ -1,3 +1,9 @@
+$rosa: rgb(255 136 137);
+$verde: rgb(1 227 127);
+$azul: rgb(0 85 240);
+
+
+
 @mixin mobile {
     @media (max-width: 760px) { @content; }
   }
