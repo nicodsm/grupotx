@@ -12,7 +12,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: black;
+    background-color: #1B1B1B;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -110,7 +110,7 @@ body {
             .content--contacto {
                 a {
                     background-color: $rosa;
-                    color: white;
+                    color: white!important;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -340,4 +340,40 @@ body {
         }
     }
 
+}
+
+
+
+.dia {
+    background-color: white;
+    .content--title p{
+        color: black!important;
+    }
+    .content--info p {
+        color: black!important;
+    }
+    .content--logo img {
+        filter: grayscale(1)!important;
+    }
+    .logo img {
+        filter: grayscale(1)!important;
+    }
+
+    .content--texto {
+        color: black!important;
+    }
+    .pilar {
+        border-bottom: 2px solid black!important;
+    }
+    .pilar--texto {
+        color: black!important;
+    }
+
+    .hero--text {
+        color: black!important;
+    }
+
+    .sabias__container--content {
+        color: black!important;
+    }
 }

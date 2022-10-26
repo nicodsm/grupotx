@@ -10,7 +10,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: black;
+  background-color: #1B1B1B;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -34,18 +34,18 @@ body .header .header__container div .name {
   margin-bottom: 5rem;
 }
 body .header .header__container div#nosotros {
-  background-color: rgb(255, 136, 137);
+  background-color: #FF8888;
   z-index: 10;
   transition: all 0.7s ease;
 }
 body .header .header__container div#servicios {
-  background-color: rgb(0, 85, 240);
+  background-color: #0054F0;
   left: 8vw;
   z-index: 9;
   transition: all 0.7s ease;
 }
 body .header .header__container div#home {
-  background-color: rgb(1, 227, 127);
+  background-color: #00E37F;
   left: 0;
   z-index: 8;
   transition: all 0.7s ease;
@@ -62,7 +62,7 @@ body .header .header__container--content .content--logo img {
   filter: brightness(100) grayscale(1);
 }
 body .header .header__container--content .content--contacto a {
-  background-color: rgb(255, 136, 137);
+  background-color: #FF8888;
   color: white;
   display: flex;
   align-items: center;
@@ -93,8 +93,8 @@ body #sectionHome .header__container--content .content--logo img, body #sectionN
   filter: brightness(100) grayscale(1);
 }
 body #sectionHome .header__container--content .content--contacto a, body #sectionNosotros .header__container--content .content--contacto a, body #sectionServicios .header__container--content .content--contacto a {
-  background-color: rgb(255, 136, 137);
-  color: white;
+  background-color: #FF8888;
+  color: white !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +120,7 @@ body #sectionHome .home__container .home__container--hero .hero__content .conten
   margin: 0;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--title p span {
-  color: rgb(1, 227, 127);
+  color: #00E37F;
   font-size: 6rem;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--info {
@@ -156,7 +156,7 @@ body #sectionHome .home__container .map .map__container .map__container--content
   margin-top: 10rem;
 }
 body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card {
-  background-color: rgb(1, 227, 127);
+  background-color: #00E37F;
   width: 20rem;
   height: 25rem;
 }
@@ -184,7 +184,7 @@ body #sectionServicios .servicios__container .servicios__container--hero .hero__
   line-height: 9rem;
 }
 body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto span {
-  color: rgb(1, 227, 127);
+  color: #00E37F;
   font-size: 7rem;
 }
 body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--img {
@@ -196,7 +196,7 @@ body #sectionServicios .servicios__container .servicios__container--hero .hero__
   height: 20rem;
 }
 body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--title h3 {
-  color: rgb(1, 227, 127);
+  color: #00E37F;
   font-weight: 900;
   font-size: 4rem;
 }
@@ -248,11 +248,11 @@ body #sectionNosotros .nosotros__container .nosotros__container--hero .hero__con
   left: 35vw;
 }
 body #sectionNosotros .nosotros__container .nosotros__container--hero .hero__container--content .hero--text span {
-  color: rgb(1, 227, 127);
+  color: #00E37F;
   font-size: 7rem;
 }
 body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--title h3 {
-  color: rgb(1, 227, 127);
+  color: #00E37F;
   font-size: 6rem;
   font-weight: 900;
 }
@@ -273,6 +273,37 @@ body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias_
 }
 body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content .sabias--info .imagen img {
   height: 20rem;
+}
+
+.dia {
+  background-color: white;
+}
+.dia .content--title p {
+  color: black !important;
+}
+.dia .content--info p {
+  color: black !important;
+}
+.dia .content--logo img {
+  filter: grayscale(1) !important;
+}
+.dia .logo img {
+  filter: grayscale(1) !important;
+}
+.dia .content--texto {
+  color: black !important;
+}
+.dia .pilar {
+  border-bottom: 2px solid black !important;
+}
+.dia .pilar--texto {
+  color: black !important;
+}
+.dia .hero--text {
+  color: black !important;
+}
+.dia .sabias__container--content {
+  color: black !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
