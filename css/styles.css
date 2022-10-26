@@ -28,6 +28,7 @@ body .header .header__container div .name {
   transform: rotate(180deg);
   font-size: 3rem;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 5rem;
 }
 body .header .header__container div#nosotros {
   background-color: rgb(255, 136, 137);
