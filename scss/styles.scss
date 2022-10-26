@@ -13,6 +13,9 @@ html {
 body {
     font-size: 1.6rem;
     background-color: black;
+    &::-webkit-scrollbar {
+        display: none;
+    }
     .header {
         .header__container {
             div {
@@ -274,6 +277,65 @@ body {
         .nosotros__container {
             padding-right: 20vw;
             padding-left: 4vw;
+
+            .nosotros__container--hero {
+                height: 100vh;
+                .hero__container {
+                    &--content {
+                        position: relative;
+                        .hero--img {
+                            position: absolute;
+                            img {
+                                height: 40rem;
+                            }
+                        }
+                        .hero--text {
+                            font-size: 10rem;
+                            font-weight: 900;
+                            line-height: 9rem;
+                            position: absolute;
+                            top: 35vh;
+                            left: 35vw;
+                            span {
+                                color: $verde;
+                                font-size: 7rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nosotros__container--sabias {
+                .sabias__container {
+                    .sabias__container--title h3 {
+                        color: $verde;
+                        font-size: 6rem;
+                        font-weight: 900;
+                    }
+
+                    .sabias__container--content {
+                        margin-top: 10rem;
+                        .sabias--info {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 15rem;
+                            .text {
+                                width: 60%;
+                                font-size: 2.5rem;
+                            }
+                            .imagen {
+                                width: 30%;
+                                img {
+                                    height: 20rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
 
         }
     }
