@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const sectionServicios = document.querySelector('#sectionServicios');
     const sectionNosotros  = document.querySelector('#sectionNosotros');
 
+
+
+    setTimeout(() => {
+
+        btnNosotros.style.height = '100vh';
+
+        btnHome.style.height = '100vh'
+
+        setTimeout(() => {
+            btnServicios.style.height = '100vh';
+        }, 500);
+        
+    }, 700);
+
     document.addEventListener('click', (e)=>{
         
         if(e.target.id === 'servicios') {
