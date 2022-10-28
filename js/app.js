@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 setTimeout(() => {
                     btnHome.style.right = '0';
                     btnHome.style.left = 'unset';
-                    btnHome.style.width = '8vw';
-                    btnServicios.style.width = '84vw';
+                    btnHome.style.width = '6vw';
+                    btnServicios.style.width = '88vw';
                     setTimeout(() => {
-                        btnServicios.style.right = '8vw';
+                        btnServicios.style.right = '6vw';
                         btnServicios.style.left = 'unset';
                         btnServicios.style.width = '0vw';
                         setTimeout(() => {
@@ -69,17 +69,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 pHome.style.opacity = '0'
                 pNosotros.style.opacity = '0'
                 // nosotros activo
-                btnNosotros.style.width = '84vw';
+                btnNosotros.style.width = '88vw';
 
                 setTimeout(() => {
                     btnNosotros.style.left = '0';
                     btnNosotros.style.right = 'unset';
-                    btnNosotros.style.width = '8vw';
+                    btnNosotros.style.width = '6vw';
 
-                    btnServicios.style.width = '84vw';
+                    btnServicios.style.width = '88vw';
 
                     setTimeout(() => {
-                        btnServicios.style.left = '8vw';
+                        btnServicios.style.left = '6vw';
                         btnServicios.style.right = 'unset';
 
                         btnServicios.style.width = '0';
@@ -110,20 +110,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 pHome.style.opacity = '0'
                 pNosotros.style.opacity = '0'
     
-                btnServicios.style.width = '84vw';
+                btnServicios.style.width = '88vw';
     
                 setTimeout(() => {
-                    btnHome.style.width = '84vw';
+                    btnHome.style.width = '88vw';
     
                     
-                    btnServicios.style.left = '8vw';
+                    btnServicios.style.left = '6vw';
                     btnServicios.style.right = 'unset'
     
-                    btnServicios.style.width = '8vw';
+                    btnServicios.style.width = '6vw';
     
     
                     setTimeout(() => {
-                        btnHome.style.left = '8vw';
+                        btnHome.style.left = '6vw';
                         btnHome.style.right = 'unset'
                         btnHome.style.width = '0vw';
     
@@ -144,23 +144,23 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 pNosotros.style.opacity = '0'
                 pHome.style.opacity = '0'
 
-                btnNosotros.style.width = '84vw';
+                btnNosotros.style.width = '88vw';
 
                 setTimeout(() => {
                     btnNosotros.style.left = '0';
                     btnNosotros.style.right = 'unset';
-                    btnNosotros.style.width = '8vw';
+                    btnNosotros.style.width = '6vw';
 
-                    btnServicios.style.width = '84vw';
+                    btnServicios.style.width = '88vw';
 
                     setTimeout(() => {
-                        btnServicios.style.left = '8vw';
+                        btnServicios.style.left = '6vw';
                         btnServicios.style.right = 'unset'
-                        btnServicios.style.width = '8vw';
+                        btnServicios.style.width = '6vw';
 
-                        btnHome.style.width = '84vw';
+                        btnHome.style.width = '88vw';
                         setTimeout(() => {
-                            btnHome.style.left = '8vw';
+                            btnHome.style.left = '6vw';
                             btnHome.style.right = 'unset';
                             btnHome.style.width = '0';
 
@@ -195,20 +195,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 setTimeout(() => {
                     btnHome.style.left = 'unset';
                     btnHome.style.right = '0';
-                    btnHome.style.width = '8vw';
+                    btnHome.style.width = '6vw';
     
-                    btnServicios.style.width = '84vw';
+                    btnServicios.style.width = '88vw';
     
                     setTimeout(() => {
                         btnServicios.style.left = 'unset';
-                        btnServicios.style.right = '8vw';
-                        btnServicios.style.width = '8vw';
+                        btnServicios.style.right = '6vw';
+                        btnServicios.style.width = '6vw';
     
-                        btnNosotros.style.width = '84vw';
+                        btnNosotros.style.width = '88vw';
     
                         setTimeout(() => {
                             btnNosotros.style.left = 'unset';
-                            btnNosotros.style.right = '16vw';
+                            btnNosotros.style.right = '12vw';
                             btnNosotros.style.width = '0';
     
                             setTimeout(() => {
@@ -228,19 +228,19 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 pHome.style.opacity = '0'
                 pNosotros.style.opacity = '0'
 
-                btnServicios.style.width = '84vw';
+                btnServicios.style.width = '88vw';
 
                 setTimeout(() => {
                     btnServicios.style.left = 'unset';
-                    btnServicios.style.right = '8vw';
+                    btnServicios.style.right = '6vw';
 
-                    btnServicios.style.width = '8vw';
+                    btnServicios.style.width = '6vw';
 
-                    btnNosotros.style.width = '84vw';
+                    btnNosotros.style.width = '88vw';
 
                     setTimeout(() => {
                         btnNosotros.style.left = 'unset';
-                        btnNosotros.style.right = '16vw';
+                        btnNosotros.style.right = '12vw';
 
                         btnNosotros.style.width = '0';
 

@@ -21,7 +21,7 @@ body {
             div {
                 position: fixed;
                 cursor: pointer;
-                width: 8vw;
+                width: 6vw;
                 height: 0vh;
                 color: white;
                 font-weight: bold;
@@ -33,7 +33,7 @@ body {
                     transform: rotate(180deg);
                     font-size: 3rem;
                     transition: all .3s ease-in-out;
-                    margin-bottom: 5rem;
+                    margin-bottom: 7rem;
                     &.pNosotros {
                         position: relative;
                         &::before {
@@ -43,7 +43,7 @@ body {
                             background-size: cover;
                             width: 3rem;
                             height: 34px;
-                            top: -39px;
+                            top: -45px;
                             left: 3px;
                         }
                     }
@@ -56,7 +56,7 @@ body {
                             background-size: cover;
                             width: 3rem;
                             height: 23px;
-                            top: -33px;
+                            top: -45px;
                             left: 6px;
                             transform: rotate(78deg)
                         }
@@ -69,7 +69,7 @@ body {
                 }
                 &#servicios {
                     background-color: $azul;
-                    left: 8vw;
+                    left: 6vw;
                     z-index: 9;
                     transition: all 0.7s ease;
                     
@@ -159,7 +159,7 @@ body {
             padding-left: 20vw;
             padding-right: 4vw;
             .home__container--hero {
-                height: 100vh;
+                height: 75vh;
                 .hero__content {
                     margin-top: 10rem;
                     .content--title {
@@ -234,21 +234,21 @@ body {
                             align-items: center;
                             .icono {
                                 position: absolute;
-                                z-index: 10;
+                                z-index: 5;
                                 &:nth-of-type(1) {
-                                    left: 10vw;
-                                    top: -31vh;
+                                    left: 8vw;
+                                    top: -34vh;
                                 }
                                 &:nth-of-type(2) {
                                     left: 31vw;
-                                    top: -31vh;
+                                    top: -34vh;
                                 }
                                 &:nth-of-type(3) {
                                     left: 52vw;
-                                    top: -31vh;
+                                    top: -34vh;
                                 }
                                 img {
-                                    height: 10rem;
+                                    height: 13rem;
                                 }
                             }
                         }
@@ -285,6 +285,15 @@ body {
                                 width: 20rem;
                                 height: 25rem;
                                 position: absolute;
+                                border-radius: 2rem;
+                                .imagen {
+                                    position: absolute;
+                                    bottom: -40px;
+                                    right: -45px;
+                                    img {
+                                        height: 15rem;
+                                    }
+                                }
                                 &:nth-of-type(1) {
                                     top: 30vh;
                                     left: 0vw;
