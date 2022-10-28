@@ -12,12 +12,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const sectionNosotros  = document.querySelector('#sectionNosotros');
 
 
-    const hora = new Date().getHours();
-
-    
-    if(hora >= 6 || hora <= 19) {
-        document.querySelector('body').classList.add('dia');
-    }
     setTimeout(() => {
 
         btnNosotros.style.height = '100vh';

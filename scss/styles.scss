@@ -34,6 +34,33 @@ body {
                     font-size: 3rem;
                     transition: all .3s ease-in-out;
                     margin-bottom: 5rem;
+                    &.pNosotros {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            background: url(/images/mas.png);
+                            background-size: cover;
+                            width: 3rem;
+                            height: 34px;
+                            top: -39px;
+                            left: 3px;
+                        }
+                    }
+                    &.pServicios {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            background: url(/images/flechita.png);
+                            background-size: cover;
+                            width: 3rem;
+                            height: 23px;
+                            top: -33px;
+                            left: 6px;
+                            transform: rotate(78deg)
+                        }
+                    }
                 }
                 &#nosotros {
                     background-color: $rosa;
@@ -132,14 +159,41 @@ body {
             padding-left: 20vw;
             padding-right: 4vw;
             .home__container--hero {
+                height: 100vh;
                 .hero__content {
                     margin-top: 10rem;
                     .content--title {
+                        line-height: 9rem;
                         p {
                             color: white;
                             font-weight: 900;
                             font-size: 8rem;
                             margin: 0;
+                            position: relative;
+                            &:nth-of-type(1) {
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    background: url(/images/Capa\ 23.png);
+                                    background-size: cover;
+                                    top: -3rem;
+                                    left: 0;
+                                    width: 44rem;
+                                    height: 15rem;
+                                }
+                            }
+                            &:nth-of-type(3) {
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    background: url(/images/Capa\ 24.png);
+                                    background-size: cover;
+                                    top: 5rem;
+                                    left: -20px;
+                                    width: 49rem;
+                                    height: 2rem;
+                                }
+                            }
                             span {
                                 color: $verde;
                                 font-size: 6rem;
@@ -151,6 +205,19 @@ body {
                         margin-top: 4rem;
                         display: flex;
                         justify-content: end;
+                        p {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                background: url(/images/Capa\ 13.png);
+                                background-size: cover;
+                                width: 25rem;
+                                height: 12rem;
+                                top: -3rem;
+                                left: -4rem;
+                            }
+                        }
                     }
                 }
             }
@@ -160,20 +227,50 @@ body {
                 padding-bottom: 25rem;
                 .map__container {
                     .map__container--content {
+                        position: relative;
                         .iconos__container {
                             display: flex;
                             justify-content: space-evenly;
                             align-items: center;
                             .icono {
+                                position: absolute;
+                                z-index: 10;
+                                &:nth-of-type(1) {
+                                    left: 10vw;
+                                    top: -31vh;
+                                }
+                                &:nth-of-type(2) {
+                                    left: 31vw;
+                                    top: -31vh;
+                                }
+                                &:nth-of-type(3) {
+                                    left: 52vw;
+                                    top: -31vh;
+                                }
                                 img {
                                     height: 10rem;
                                 }
                             }
                         }
+                        .lines {
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: -13rem;
+                            z-index: 1;
+                            img {
+                                height: 40rem;
+                            }
+
+                        }
                         .logo {
                             display: flex;
                             justify-content: center;
-                            margin-top: 10rem;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
                             img {
                                 height: 6rem;
                                 filter: brightness(100) grayscale(1);
@@ -182,12 +279,28 @@ body {
                         .cards__container {
                             display: flex;
                             justify-content: space-evenly;
-                            margin-top: 10rem;
 
                             .card {
                                 background-color: $verde;
                                 width: 20rem;
                                 height: 25rem;
+                                position: absolute;
+                                &:nth-of-type(1) {
+                                    top: 30vh;
+                                    left: 0vw;
+                                }
+                                &:nth-of-type(2) {
+                                    top: 30vh;
+                                    left: 19vw;
+                                }
+                                &:nth-of-type(3) {
+                                    top: 30vh;
+                                    left: 41vw;
+                                }
+                                &:nth-of-type(4) {
+                                    top: 30vh;
+                                    left: 60vw;
+                                }
                                 .text {
                                     padding: 3rem 2rem;
                                     font-weight: bold;

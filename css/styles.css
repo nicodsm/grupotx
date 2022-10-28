@@ -33,6 +33,33 @@ body .header .header__container div .name {
   transition: all 0.3s ease-in-out;
   margin-bottom: 5rem;
 }
+body .header .header__container div .name.pNosotros {
+  position: relative;
+}
+body .header .header__container div .name.pNosotros::before {
+  content: "";
+  position: absolute;
+  background: url(/images/mas.png);
+  background-size: cover;
+  width: 3rem;
+  height: 34px;
+  top: -39px;
+  left: 3px;
+}
+body .header .header__container div .name.pServicios {
+  position: relative;
+}
+body .header .header__container div .name.pServicios::before {
+  content: "";
+  position: absolute;
+  background: url(/images/flechita.png);
+  background-size: cover;
+  width: 3rem;
+  height: 23px;
+  top: -33px;
+  left: 6px;
+  transform: rotate(78deg);
+}
 body .header .header__container div#nosotros {
   background-color: #FF8888;
   z-index: 10;
@@ -110,14 +137,41 @@ body #sectionHome .home__container {
   padding-left: 20vw;
   padding-right: 4vw;
 }
+body #sectionHome .home__container .home__container--hero {
+  height: 100vh;
+}
 body #sectionHome .home__container .home__container--hero .hero__content {
   margin-top: 10rem;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--title {
+  line-height: 9rem;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--title p {
   color: white;
   font-weight: 900;
   font-size: 8rem;
   margin: 0;
+  position: relative;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--title p:nth-of-type(1)::after {
+  position: absolute;
+  content: "";
+  background: url(/images/Capa\ 23.png);
+  background-size: cover;
+  top: -3rem;
+  left: 0;
+  width: 44rem;
+  height: 15rem;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--title p:nth-of-type(3)::after {
+  position: absolute;
+  content: "";
+  background: url(/images/Capa\ 24.png);
+  background-size: cover;
+  top: 5rem;
+  left: -20px;
+  width: 49rem;
+  height: 2rem;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--title p span {
   color: #00E37F;
@@ -129,22 +183,68 @@ body #sectionHome .home__container .home__container--hero .hero__content .conten
   display: flex;
   justify-content: end;
 }
+body #sectionHome .home__container .home__container--hero .hero__content .content--info p {
+  position: relative;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--info p::after {
+  content: "";
+  position: absolute;
+  background: url(/images/Capa\ 13.png);
+  background-size: cover;
+  width: 25rem;
+  height: 12rem;
+  top: -3rem;
+  left: -4rem;
+}
 body #sectionHome .home__container .map {
   padding-top: 25rem;
   padding-bottom: 25rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content {
+  position: relative;
 }
 body #sectionHome .home__container .map .map__container .map__container--content .iconos__container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono {
+  position: absolute;
+  z-index: 10;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono:nth-of-type(1) {
+  left: 10vw;
+  top: -31vh;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono:nth-of-type(2) {
+  left: 31vw;
+  top: -31vh;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono:nth-of-type(3) {
+  left: 52vw;
+  top: -31vh;
+}
 body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono img {
   height: 10rem;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .lines {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -13rem;
+  z-index: 1;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .lines img {
+  height: 40rem;
 }
 body #sectionHome .home__container .map .map__container .map__container--content .logo {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 body #sectionHome .home__container .map .map__container .map__container--content .logo img {
   height: 6rem;
@@ -153,12 +253,28 @@ body #sectionHome .home__container .map .map__container .map__container--content
 body #sectionHome .home__container .map .map__container .map__container--content .cards__container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 10rem;
 }
 body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card {
   background-color: #00E37F;
   width: 20rem;
   height: 25rem;
+  position: absolute;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(1) {
+  top: 30vh;
+  left: 0vw;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(2) {
+  top: 30vh;
+  left: 19vw;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(3) {
+  top: 30vh;
+  left: 41vw;
+}
+body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(4) {
+  top: 30vh;
+  left: 60vw;
 }
 body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card .text {
   padding: 3rem 2rem;
