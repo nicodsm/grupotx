@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -39,17 +40,32 @@ body .header .header__container div .name.pNosotros {
 body .header .header__container div .name.pNosotros::before {
   content: "";
   position: absolute;
-  background: url(/images/mas.png);
+  background: url(/images/flechita.png);
   background-size: cover;
   width: 3rem;
-  height: 34px;
+  height: 23px;
   top: -45px;
-  left: 3px;
+  left: 6px;
+  transform: rotate(78deg);
 }
 body .header .header__container div .name.pServicios {
   position: relative;
 }
 body .header .header__container div .name.pServicios::before {
+  content: "";
+  position: absolute;
+  background: url(/images/flechita.png);
+  background-size: cover;
+  width: 3rem;
+  height: 23px;
+  top: -45px;
+  left: 6px;
+  transform: rotate(78deg);
+}
+body .header .header__container div .name.pHome {
+  position: relative;
+}
+body .header .header__container div .name.pHome::before {
   content: "";
   position: absolute;
   background: url(/images/flechita.png);
@@ -115,6 +131,23 @@ body #sectionHome .header__container--content, body #sectionNosotros .header__co
   align-items: center;
   justify-content: space-between;
 }
+body #sectionHome .header__container--content .content--logo, body #sectionNosotros .header__container--content .content--logo, body #sectionServicios .header__container--content .content--logo {
+  position: relative;
+}
+body #sectionHome .header__container--content .content--logo p, body #sectionNosotros .header__container--content .content--logo p, body #sectionServicios .header__container--content .content--logo p {
+  color: #00E37F;
+  font-weight: 800;
+  font-size: 6rem;
+  margin: 0;
+}
+body #sectionHome .header__container--content .content--logo p:nth-of-type(2), body #sectionNosotros .header__container--content .content--logo p:nth-of-type(2), body #sectionServicios .header__container--content .content--logo p:nth-of-type(2) {
+  color: #F2E8DE;
+  font-size: 2rem;
+  font-weight: 400;
+  position: absolute;
+  right: -5rem;
+  bottom: -2rem;
+}
 body #sectionHome .header__container--content .content--logo img, body #sectionNosotros .header__container--content .content--logo img, body #sectionServicios .header__container--content .content--logo img {
   height: 6rem;
   filter: brightness(100) grayscale(1);
@@ -142,46 +175,35 @@ body #sectionHome .home__container .home__container--hero {
 }
 body #sectionHome .home__container .home__container--hero .hero__content {
   margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--title {
   line-height: 9rem;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--title p {
-  color: white;
+  color: #F2E8DE;
   font-weight: 900;
   font-size: 8rem;
   margin: 0;
   position: relative;
 }
-body #sectionHome .home__container .home__container--hero .hero__content .content--title p:nth-of-type(1)::after {
-  position: absolute;
-  content: "";
-  background: url(/images/Capa\ 23.png);
-  background-size: cover;
-  top: -3rem;
-  left: 0;
-  width: 44rem;
-  height: 15rem;
-}
-body #sectionHome .home__container .home__container--hero .hero__content .content--title p:nth-of-type(3)::after {
-  position: absolute;
-  content: "";
-  background: url(/images/Capa\ 24.png);
-  background-size: cover;
-  top: 5rem;
-  left: -20px;
-  width: 49rem;
-  height: 2rem;
+body #sectionHome .home__container .home__container--hero .hero__content .content--title p:nth-of-type(1) {
+  font-size: 3rem;
+  font-weight: 400;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--title p span {
   color: #00E37F;
-  font-size: 6rem;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--info {
-  width: 100%;
   margin-top: 4rem;
   display: flex;
   justify-content: end;
+}
+body #sectionHome .home__container .home__container--hero .hero__content .content--info img {
+  height: 20rem;
+  margin-right: 10rem;
 }
 body #sectionHome .home__container .home__container--hero .hero__content .content--info p {
   position: relative;
@@ -196,160 +218,251 @@ body #sectionHome .home__container .home__container--hero .hero__content .conten
   top: -3rem;
   left: -4rem;
 }
-body #sectionHome .home__container .map {
-  padding-top: 25rem;
-  padding-bottom: 25rem;
-}
-body #sectionHome .home__container .map .map__container .map__container--content {
-  position: relative;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .iconos__container {
-  position: absolute;
-  top: -27rem;
-  left: 52%;
-  /* transform: translate(10px, 10px); */
+body #sectionHome .home__container .video-funciona .video__container {
   display: flex;
-  gap: 14rem;
-  transform: translateX(-50%);
+  align-items: flex-start;
+  justify-content: space-between;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono {
-  z-index: 5;
+body #sectionHome .home__container .video-funciona .video__container .video--content iframe {
+  border-radius: 3rem;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono:nth-of-type(1) {
-  left: 10rem;
-  top: -34vh;
+body #sectionHome .home__container .video-funciona .video__container .video--info {
+  color: #F2E8DE;
+  padding-left: 7rem;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono:nth-of-type(2) {
-  left: 40rem;
-  top: -34vh;
+body #sectionHome .home__container .video-funciona .video__container .video--info h3 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono:nth-of-type(3) {
-  right: 10rem;
-  top: -34vh;
+body #sectionHome .home__container .video-funciona .video__container .video--info ul li {
+  margin-bottom: 4rem;
+  list-style: none;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .iconos__container .icono img {
-  height: 15rem;
+body #sectionHome .home__container .video-funciona .video__container .video--info ul li::before {
+  content: url(/images/flecha-verde.png);
+  margin-left: -4rem;
+  width: 1em;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .lines {
+body #sectionHome .home__container .cards {
+  margin-top: 10rem;
+}
+body #sectionHome .home__container .cards .cards__container {
   display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -13rem;
-  z-index: 1;
+  justify-content: space-around;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .lines img {
-  height: 40rem;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .logo {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-body #sectionHome .home__container .map .map__container .map__container--content .logo img {
-  height: 6rem;
-  filter: brightness(100) grayscale(1);
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container {
-  display: flex;
-  justify-content: space-evenly;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card {
+body #sectionHome .home__container .cards .cards__container .card {
   background-color: #00E37F;
+  color: black;
+  position: relative;
+  border-radius: 1rem;
   width: 20rem;
   height: 25rem;
-  position: absolute;
-  border-radius: 2rem;
 }
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card .imagen {
-  position: absolute;
-  bottom: -40px;
-  right: -45px;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card .imagen img {
-  height: 15rem;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(1) {
-  top: 30vh;
-  left: 0vw;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(2) {
-  top: 30vh;
-  left: 19vw;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(3) {
-  top: 30vh;
-  left: 41vw;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card:nth-of-type(4) {
-  top: 30vh;
-  left: 60vw;
-}
-body #sectionHome .home__container .map .map__container .map__container--content .cards__container .card .text {
-  padding: 3rem 2rem;
-  font-weight: bold;
+body #sectionHome .home__container .cards .cards__container .card .card--text {
+  font-weight: 900;
+  padding: 2rem;
   font-size: 2rem;
+}
+body #sectionHome .home__container .cards .cards__container .card .card--img img {
+  height: 20rem;
+  position: absolute;
+  bottom: -5rem;
+  right: -5rem;
+}
+body #sectionHome .home__container .exito {
+  margin-top: 15rem;
+}
+body #sectionHome .home__container .exito .exito__container {
+  display: flex;
+  align-items: center;
+}
+body #sectionHome .home__container .exito .exito__container .exito__content {
+  padding-right: 15rem;
+}
+body #sectionHome .home__container .exito .exito__container .exito__content p {
+  font-size: 4rem;
+  font-weight: 900;
+}
+body #sectionHome .home__container .exito .exito__container .exito__content p:nth-of-type(2) {
+  font-size: 6rem;
+  line-height: 8rem;
+}
+body #sectionHome .home__container .exito .exito__container .exito__content p span {
+  color: #00E37F;
+  font-size: 9rem;
+}
+body #sectionHome .home__container .exito .exito__container .exito__video iframe {
+  border-radius: 3rem;
+}
+body #sectionHome .home__container .contacto {
+  margin-top: 15rem;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto--title {
+  color: #F2E8DE;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form {
+  width: 50%;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form .form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form .form__input:last-of-type {
+  align-items: flex-end;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form .form__input label {
+  color: #F2E8DE;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form .form__input label::before {
+  content: url(/images/flecha-verde.png);
+  margin-right: 2rem;
+  margin-left: -5rem;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form .form__input input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #00E37F;
+  height: 5rem;
+  outline: none;
+  color: #F2E8DE;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content form .form__input input[type=submit] {
+  background-color: #00E37F;
+  border-radius: 4rem;
+  width: 15rem;
+}
+body #sectionHome .home__container .contacto .contacto__container .contacto__container--content .contacto--img img {
+  margin-right: 10rem;
 }
 body #sectionServicios .servicios__container {
   padding-left: 12vw;
   padding-right: 12vw;
 }
-body #sectionServicios .servicios__container .servicios__container--hero .hero__container {
-  height: 100vh;
+body #sectionServicios .servicios__container .content--logo p {
+  color: #0055F0;
+}
+body #sectionServicios .servicios__container .content--logo p:last-of-type {
+  font-size: 2rem;
 }
 body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content {
   position: relative;
 }
 body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto {
-  position: absolute;
+  margin-top: 10rem;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto p {
   top: 30vh;
-  color: white;
+  color: #F2E8DE;
   font-weight: 900;
   font-size: 10rem;
-  line-height: 9rem;
+  line-height: 8rem;
+  margin: 0;
 }
-body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto span {
-  color: #00E37F;
-  font-size: 7rem;
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto p span {
+  color: #0054F0;
+  font-size: 10rem;
+}
+body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--texto p:first-of-type {
+  font-size: 2rem;
+  font-weight: 400;
 }
 body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--img {
   position: absolute;
   left: 37vw;
-  top: 5vw;
+  top: 0vw;
 }
 body #sectionServicios .servicios__container .servicios__container--hero .hero__container--content .content--img img {
+  height: 40rem;
+}
+body #sectionServicios .servicios__container .ventajas {
+  margin-top: 20rem;
+}
+body #sectionServicios .servicios__container .ventajas .ventajas__container {
+  display: flex;
+  align-items: center;
+}
+body #sectionServicios .servicios__container .ventajas .ventajas__container .ventajas__container--info .info--title {
+  font-weight: 900;
+  color: #F2E8DE;
+  font-size: 4.5rem;
+}
+body #sectionServicios .servicios__container .ventajas .ventajas__container .ventajas__container--info .info--list {
+  margin-top: 5rem;
+  width: 70%;
+}
+body #sectionServicios .servicios__container .ventajas .ventajas__container .ventajas__container--info .info--list ul li {
+  list-style: none;
+  margin-bottom: 3rem;
+  color: #F2E8DE;
+}
+body #sectionServicios .servicios__container .ventajas .ventajas__container .ventajas__container--info .info--list ul li::before {
+  content: url(/images/Rectángulo\ 6\ 1.png);
+  margin-left: -5.5rem;
+  margin-right: 2rem;
+}
+body #sectionServicios .servicios__container .ventajas .ventajas__container .ventajas--img img {
+  height: 50rem;
+  margin-right: -10vw;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container {
+  background-color: #F2E8DE;
+  border-radius: 3rem;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero__container--content {
+  display: flex;
+  padding: 5rem;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero__container--content .fichero--img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero__container--content .fichero--img img {
   height: 20rem;
 }
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--title h3 {
-  color: #00E37F;
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero__container--content .fichero--info {
+  color: black;
+  width: 50%;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero__container--content .fichero--info .title {
+  font-size: 5rem;
   font-weight: 900;
-  font-size: 4rem;
-}
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content {
-  margin-top: 10rem;
-}
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar {
-  display: flex;
   margin-bottom: 5rem;
-  border-bottom: 2px solid white;
-  padding-bottom: 5rem;
 }
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--img {
-  padding-left: 6rem;
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--img img {
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu .ficha {
+  background-color: black;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  width: 12rem;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu .ficha img {
+  height: 2rem;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu .ficha.active {
   height: 10rem;
-}
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--texto span {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-body #sectionServicios .servicios__container .servicios__container--pilares .pilares__container--content .pilar .pilar--texto p {
-  margin: 0;
-  margin-top: 2rem;
 }
 body #sectionNosotros .nosotros__container {
   padding-right: 20vw;
@@ -401,6 +514,31 @@ body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias_
 }
 body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content .sabias--info .imagen img {
   height: 20rem;
+}
+body .footer {
+  background-color: #F2E8DE;
+  border-top-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+  margin-top: 10rem;
+}
+body .footer .footer__container {
+  padding-left: 20vw;
+  padding-right: 4vw;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+body .footer .footer__container .logo img {
+  height: 5rem;
+  filter: grayscale(1) brightness(0);
+}
+body .footer .footer__container .text {
+  margin-top: 5rem;
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 60px;
+}
+body .footer .footer__container .text span {
+  color: #00E37F;
 }
 
 .dia {

@@ -39,15 +39,30 @@ body {
                         &::before {
                             content: "";
                             position: absolute;
-                            background: url(/images/mas.png);
+                            background: url(/images/flechita.png);
                             background-size: cover;
                             width: 3rem;
-                            height: 34px;
+                            height: 23px;
                             top: -45px;
-                            left: 3px;
+                            left: 6px;
+                            transform: rotate(78deg)
                         }
                     }
                     &.pServicios {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            background: url(/images/flechita.png);
+                            background-size: cover;
+                            width: 3rem;
+                            height: 23px;
+                            top: -45px;
+                            left: 6px;
+                            transform: rotate(78deg)
+                        }
+                    }
+                    &.pHome {
                         position: relative;
                         &::before {
                             content: "";
@@ -128,6 +143,21 @@ body {
             align-items: center;
             justify-content: space-between;
             .content--logo {
+                position: relative;
+                p {
+                    color: #00E37F;
+                    font-weight: 800;
+                    font-size: 6rem;
+                    margin: 0;
+                    &:nth-of-type(2) {
+                        color: #F2E8DE;
+                        font-size: 2rem;
+                        font-weight: 400;
+                        position: absolute;
+                        right: -5rem;
+                        bottom: -2rem;
+                    }
+                }
                 img {
                     height: 6rem;
                     filter: brightness(100) grayscale(1);
@@ -155,6 +185,7 @@ body {
     }
 
     #sectionHome {
+
         .home__container {
             padding-left: 20vw;
             padding-right: 4vw;
@@ -162,49 +193,36 @@ body {
                 height: 75vh;
                 .hero__content {
                     margin-top: 10rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     .content--title {
                         line-height: 9rem;
                         p {
-                            color: white;
+                            color: #F2E8DE;
                             font-weight: 900;
                             font-size: 8rem;
                             margin: 0;
                             position: relative;
                             &:nth-of-type(1) {
-                                &::after {
-                                    position: absolute;
-                                    content: "";
-                                    background: url(/images/Capa\ 23.png);
-                                    background-size: cover;
-                                    top: -3rem;
-                                    left: 0;
-                                    width: 44rem;
-                                    height: 15rem;
-                                }
+                                font-size: 3rem;
+                                font-weight: 400;
                             }
-                            &:nth-of-type(3) {
-                                &::after {
-                                    position: absolute;
-                                    content: "";
-                                    background: url(/images/Capa\ 24.png);
-                                    background-size: cover;
-                                    top: 5rem;
-                                    left: -20px;
-                                    width: 49rem;
-                                    height: 2rem;
-                                }
-                            }
+
                             span {
                                 color: $verde;
-                                font-size: 6rem;
                             }
                         }
                     }
                     .content--info {
-                        width: 100%;
+
                         margin-top: 4rem;
                         display: flex;
                         justify-content: end;
+                        img {
+                            height: 20rem;
+                            margin-right: 10rem;
+                        }
                         p {
                             position: relative;
                             &::after {
@@ -220,112 +238,159 @@ body {
                         }
                     }
                 }
+
             }
 
-            .map {
-                padding-top: 25rem;
-                padding-bottom: 25rem;
-                .map__container {
-                    .map__container--content {
-                        position: relative;
-                        .iconos__container {
-                            position: absolute;
-                            top: -27rem;
-                            left: 52%;
-                            /* transform: translate(10px, 10px); */
-                            display: flex;
-                            gap: 14rem;
-                            transform: translateX(-50%);
-
-
-                            .icono {
-                                // position: absolute;
-                                z-index: 5;
-                                &:nth-of-type(1) {
-                                    left: 10rem;
-                                    top: -34vh;
-                                }
-                                &:nth-of-type(2) {
-                                    left: 40rem;
-                                    top: -34vh;
-                                }
-                                &:nth-of-type(3) {
-                                    right: 10rem;
-                                    top: -34vh;
-                                }
-                                img {
-                                    height: 15rem;
-                                }
-                            }
+            .video-funciona {
+                .video__container {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    .video--content {
+                        iframe {
+                            border-radius: 3rem;
                         }
-                        .lines {
-                            display: flex;
-                            justify-content: center;
-                            position: absolute;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            top: -13rem;
-                            z-index: 1;
-                            img {
-                                height: 40rem;
-                            }
-
+                    }
+                    .video--info {
+                        color: #F2E8DE;
+                        padding-left: 7rem;
+                        h3 {
+                            font-weight: bold;
+                            font-size: 3rem;
+                            margin-bottom: 3rem;
                         }
-                        .logo {
-                            display: flex;
-                            justify-content: center;
-                            position: absolute;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            img {
-                                height: 6rem;
-                                filter: brightness(100) grayscale(1);
-                            }
-                        }
-                        .cards__container {
-                            display: flex;
-                            justify-content: space-evenly;
-
-                            .card {
-                                background-color: $verde;
-                                width: 20rem;
-                                height: 25rem;
-                                position: absolute;
-                                border-radius: 2rem;
-                                .imagen {
-                                    position: absolute;
-                                    bottom: -40px;
-                                    right: -45px;
-                                    img {
-                                        height: 15rem;
-                                    }
-                                }
-                                &:nth-of-type(1) {
-                                    top: 30vh;
-                                    left: 0vw;
-                                }
-                                &:nth-of-type(2) {
-                                    top: 30vh;
-                                    left: 19vw;
-                                }
-                                &:nth-of-type(3) {
-                                    top: 30vh;
-                                    left: 41vw;
-                                }
-                                &:nth-of-type(4) {
-                                    top: 30vh;
-                                    left: 60vw;
-                                }
-                                .text {
-                                    padding: 3rem 2rem;
-                                    font-weight: bold;
-                                    font-size: 2rem;
+                        ul {
+                            li {
+                                margin-bottom: 4rem;
+                                list-style: none;
+                                &::before {
+                                    content: url(/images/flecha-verde.png);
+                                    margin-left: -4rem;
+                                    width: 1em;
+                                    margin-right: 1rem;
+                                    margin-top: 1rem;
                                 }
                             }
                         }
                     }
                 }
             }
+
+            .cards {
+                margin-top: 10rem;
+                .cards__container {
+                    display: flex;
+                    justify-content: space-around;
+                    .card {
+                        background-color: #00E37F;
+                        color: black;
+                        position: relative;
+                        border-radius: 1rem;
+                        width: 20rem;
+                        height: 25rem;
+                        .card--text {
+                            font-weight: 900;
+                            padding: 2rem;
+                            font-size: 2rem;
+                        }
+                        .card--img {
+                            img {
+                                height: 20rem;
+                                position: absolute;
+                                bottom: -5rem;
+                                right: -5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .exito {
+                margin-top: 15rem;
+                .exito__container {
+                    display: flex;
+                    align-items: center;
+                    .exito__content {
+                        padding-right: 15rem;
+                        p {
+                            font-size: 4rem;
+                            font-weight: 900;
+                            &:nth-of-type(2) {
+                                font-size: 6rem;
+                                line-height: 8rem;
+                            }
+                            span {
+                                color: #00E37F;
+                                font-size: 9rem;
+                            }
+                        }
+                    }
+                    .exito__video {
+                        iframe {
+                            border-radius: 3rem;
+                        }
+                    }
+                }
+            }
+
+            .contacto {
+                margin-top: 15rem;
+                .contacto__container {
+                    .contacto--title {
+                        color: #F2E8DE;
+                        font-size: 4.5rem;
+                        font-weight: bold;
+                    }
+                    .contacto__container--content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 10rem;
+                        form {
+                            width: 50%;
+
+                            .form__input {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 3rem;
+                                &:last-of-type {
+                                    align-items: flex-end;
+                                }
+
+                                label {
+                                    color: #F2E8DE;
+                                    &::before {
+                                        content: url(/images/flecha-verde.png);
+                                        margin-right: 2rem;
+                                        margin-left: -5rem;
+
+                                    }
+                                }
+                                input {
+                                    background-color: transparent;
+                                    border: none;
+                                    border-bottom: 2px solid #00E37F;
+                                    height: 5rem;
+                                    outline: none;
+                                    color: #F2E8DE;
+                                }
+                                input[type="submit"] {
+                                    background-color: #00E37F;
+                                    border-radius: 4rem;
+                                    width: 15rem;
+                                }
+                            }
+                        }
+                        .contacto--img {
+                            img {
+                                margin-right: 10rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 
@@ -333,66 +398,137 @@ body {
         .servicios__container {
             padding-left: 12vw;
             padding-right: 12vw;
+            .content--logo {
+                p {
+                    color: #0055F0;
+                    &:last-of-type {
+                        font-size: 2rem;
+                    }
+                }
+            }
 
             .servicios__container--hero {
                 .hero__container {
-                    height: 100vh;
+
                     &--content {
                         position: relative;
                         .content--texto {
-                            position: absolute;
-                            top: 30vh;
-                            color: white;
-                            font-weight: 900;
-                            font-size: 10rem;
-                            line-height: 9rem;
-                            span {
-                                color: $verde;
-                                font-size: 7rem;
+                            margin-top: 10rem;
+                            p {
+
+                                top: 30vh;
+                                color: #F2E8DE;
+                                font-weight: 900;
+                                font-size: 10rem;
+                                line-height: 8rem;
+                                margin: 0;
+                                span {
+                                    color: $azul;
+                                    font-size: 10rem;
+                                }
+                                &:first-of-type {
+                                    font-size: 2rem;
+                                    font-weight: 400;
+                                }
+
                             }
                         }
                         .content--img {
                             position: absolute;
                             left: 37vw;
-                            top: 5vw;
+                            top: 0vw;
                             img {
-                                height: 20rem;
+                                height: 40rem;
                             }
                         }
                     }
                 }
             }
-            .servicios__container--pilares {
-                .pilares__container {
-                    &--title {
-                        h3 {
-                            color: $verde;
+
+            .ventajas {
+                margin-top: 20rem;
+                .ventajas__container {
+                    display: flex;
+                    align-items: center;
+                    
+                    .ventajas__container--info {
+                        .info--title {
                             font-weight: 900;
-                            font-size: 4rem;
+                            color: #F2E8DE;
+                            font-size: 4.5rem;
                         }
-                    }
-                    &--content {
-                        margin-top: 10rem;
-                        .pilar {
-                            display: flex;
-                            margin-bottom: 5rem;
-                            border-bottom: 2px solid white;
-                            padding-bottom: 5rem;
-                            .pilar--img {
-                                padding-left: 6rem;
-                                img {
-                                    height: 10rem;
+                        .info--list {
+                            margin-top: 5rem;
+                            width: 70%;
+                            ul {
+                                li {
+                                    list-style: none;
+                                    margin-bottom: 3rem;
+                                    color: #F2E8DE;
+                                    &::before {
+                                        content: url(/images/Rectángulo\ 6\ 1.png);
+                                        margin-left: -5.5rem;
+                                        margin-right: 2rem;
+                                    }
                                 }
                             }
-                            .pilar--texto {
-                                span {
-                                    font-weight: bold;
-                                    margin-bottom: 1rem;
-                                }
-                                p {
-                                    margin: 0;
-                                    margin-top: 2rem;
-                                }
+                        }
+                    }
+                    .ventajas--img {
+                        img {
+                            height: 50rem;
+                            margin-right: -10vw;
+                        }
+                    }
+                }
+            }
+
+            .fichero {
+                .fichero__container {
+                    background-color: #F2E8DE;
+                    border-radius: 3rem;
+                    .fichero__container--content {
+                        display: flex;
+                        padding: 5rem;
+                        .fichero--img {
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                height: 20rem;
+                            }
+                        }
+                        .fichero--info {
+                            color: black;
+                            width: 50%;
+                            .title {
+                                font-size: 5rem;
+                                font-weight: 900;
+                                margin-bottom: 5rem;
+                            }
+
+                        }
+                    }
+                    .fichero--menu {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-end;
+                        .ficha {
+                            background-color: black;
+                            border-top-left-radius: 3rem;
+                            border-top-right-radius: 3rem;
+                            width: 12rem;
+                            height: 6rem;
+                            padding: 1rem;
+                            display: flex;
+                            justify-content: space-between;
+                            cursor: pointer;
+                            img {
+                                height: 2rem;
+                            }
+                            &.active {
+                                height: 10rem;
                             }
                         }
                     }
@@ -465,6 +601,34 @@ body {
 
 
 
+        }
+    }
+
+    .footer {
+        background-color: #F2E8DE;
+        border-top-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        margin-top: 10rem;
+        .footer__container {
+            padding-left: 20vw;
+            padding-right: 4vw;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            .logo {
+                img {
+                    height: 5rem;
+                    filter: grayscale(1) brightness(0);
+                }
+            }
+            .text {
+                margin-top: 5rem;
+                font-size: 6rem;
+                font-weight: 900;
+                line-height: 60px;
+                span {
+                    color: #00E37F;
+                }
+            }
         }
     }
 
