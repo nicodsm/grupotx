@@ -416,6 +416,9 @@ body #sectionServicios .servicios__container .ventajas .ventajas__container .ven
   height: 50rem;
   margin-right: -10vw;
 }
+body #sectionServicios .servicios__container .fichero {
+  margin-top: 10rem;
+}
 body #sectionServicios .servicios__container .fichero .fichero__container {
   background-color: #F2E8DE;
   border-radius: 3rem;
@@ -457,6 +460,10 @@ body #sectionServicios .servicios__container .fichero .fichero__container .fiche
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu .ficha:hover {
+  height: 8rem;
 }
 body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu .ficha img {
   height: 2rem;
@@ -464,9 +471,64 @@ body #sectionServicios .servicios__container .fichero .fichero__container .fiche
 body #sectionServicios .servicios__container .fichero .fichero__container .fichero--menu .ficha.active {
   height: 10rem;
 }
+body #sectionServicios .servicios__container .contacto {
+  margin-top: 15rem;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto--title {
+  color: #F2E8DE;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form {
+  width: 50%;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form .form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form .form__input:last-of-type {
+  align-items: flex-end;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form .form__input label {
+  color: #F2E8DE;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form .form__input label::before {
+  content: url(/images/Rectángulo\ 6\ 1.png);
+  margin-right: 2rem;
+  margin-left: -5rem;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form .form__input input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0054F0;
+  height: 5rem;
+  outline: none;
+  color: #F2E8DE;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content form .form__input input[type=submit] {
+  background-color: #0054F0;
+  border-radius: 4rem;
+  width: 15rem;
+}
+body #sectionServicios .servicios__container .contacto .contacto__container .contacto__container--content .contacto--img img {
+  margin-right: 10rem;
+}
 body #sectionNosotros .nosotros__container {
   padding-right: 20vw;
   padding-left: 4vw;
+}
+body #sectionNosotros .nosotros__container .content--logo p {
+  color: #FF8888;
+}
+body #sectionNosotros .nosotros__container .content--logo p:last-of-type {
+  font-size: 2rem;
 }
 body #sectionNosotros .nosotros__container .nosotros__container--hero {
   height: 100vh;
@@ -492,28 +554,54 @@ body #sectionNosotros .nosotros__container .nosotros__container--hero .hero__con
   color: #00E37F;
   font-size: 7rem;
 }
-body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--title h3 {
-  color: #00E37F;
-  font-size: 6rem;
-  font-weight: 900;
+body #sectionNosotros .nosotros__container .contacto {
+  margin-top: 15rem;
 }
-body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content {
-  margin-top: 10rem;
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto--title {
+  color: #F2E8DE;
+  font-size: 4.5rem;
+  font-weight: bold;
 }
-body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content .sabias--info {
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15rem;
+  align-items: center;
+  margin-top: 10rem;
 }
-body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content .sabias--info .text {
-  width: 60%;
-  font-size: 2.5rem;
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form {
+  width: 50%;
 }
-body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content .sabias--info .imagen {
-  width: 30%;
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form .form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
 }
-body #sectionNosotros .nosotros__container .nosotros__container--sabias .sabias__container .sabias__container--content .sabias--info .imagen img {
-  height: 20rem;
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form .form__input:last-of-type {
+  align-items: flex-end;
+}
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form .form__input label {
+  color: #F2E8DE;
+}
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form .form__input label::before {
+  content: url(/images/Rectángulo\ 6\ 1.png);
+  margin-right: 2rem;
+  margin-left: -5rem;
+}
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form .form__input input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FF8888;
+  height: 5rem;
+  outline: none;
+  color: #F2E8DE;
+}
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content form .form__input input[type=submit] {
+  background-color: #FF8888;
+  border-radius: 4rem;
+  width: 15rem;
+}
+body #sectionNosotros .nosotros__container .contacto .contacto__container .contacto__container--content .contacto--img img {
+  margin-right: 10rem;
 }
 body .footer {
   background-color: #F2E8DE;

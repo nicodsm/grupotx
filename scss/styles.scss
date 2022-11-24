@@ -484,6 +484,7 @@ body {
             }
 
             .fichero {
+                margin-top: 10rem;
                 .fichero__container {
                     background-color: #F2E8DE;
                     border-radius: 3rem;
@@ -524,11 +525,72 @@ body {
                             display: flex;
                             justify-content: space-between;
                             cursor: pointer;
+                            transition: all .2s ease-in-out;
+                            &:hover {
+                                height: 8rem;
+                            }
                             img {
                                 height: 2rem;
                             }
                             &.active {
                                 height: 10rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contacto {
+                margin-top: 15rem;
+                .contacto__container {
+                    .contacto--title {
+                        color: #F2E8DE;
+                        font-size: 4.5rem;
+                        font-weight: bold;
+                    }
+                    .contacto__container--content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 10rem;
+                        form {
+                            width: 50%;
+
+                            .form__input {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 3rem;
+                                &:last-of-type {
+                                    align-items: flex-end;
+                                }
+
+                                label {
+                                    color: #F2E8DE;
+                                    &::before {
+                                        content: url(/images/Rectángulo\ 6\ 1.png);
+                                        margin-right: 2rem;
+                                        margin-left: -5rem;
+
+                                    }
+                                }
+                                input {
+                                    background-color: transparent;
+                                    border: none;
+                                    border-bottom: 2px solid $azul;
+                                    height: 5rem;
+                                    outline: none;
+                                    color: #F2E8DE;
+                                }
+                                input[type="submit"] {
+                                    background-color: $azul;
+                                    border-radius: 4rem;
+                                    width: 15rem;
+                                }
+                            }
+                        }
+                        .contacto--img {
+                            img {
+                                margin-right: 10rem;
                             }
                         }
                     }
@@ -541,6 +603,14 @@ body {
         .nosotros__container {
             padding-right: 20vw;
             padding-left: 4vw;
+            .content--logo {
+                p {
+                    color: $rosa;
+                    &:last-of-type {
+                        font-size: 2rem;
+                    }
+                }
+            }
 
             .nosotros__container--hero {
                 height: 100vh;
@@ -569,35 +639,63 @@ body {
                 }
             }
 
-            .nosotros__container--sabias {
-                .sabias__container {
-                    .sabias__container--title h3 {
-                        color: $verde;
-                        font-size: 6rem;
-                        font-weight: 900;
+            .contacto {
+                margin-top: 15rem;
+                .contacto__container {
+                    .contacto--title {
+                        color: #F2E8DE;
+                        font-size: 4.5rem;
+                        font-weight: bold;
                     }
-
-                    .sabias__container--content {
+                    .contacto__container--content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                         margin-top: 10rem;
-                        .sabias--info {
-                            display: flex;
-                            justify-content: space-between;
-                            margin-bottom: 15rem;
-                            .text {
-                                width: 60%;
-                                font-size: 2.5rem;
-                            }
-                            .imagen {
-                                width: 30%;
-                                img {
-                                    height: 20rem;
+                        form {
+                            width: 50%;
+
+                            .form__input {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 3rem;
+                                &:last-of-type {
+                                    align-items: flex-end;
                                 }
+
+                                label {
+                                    color: #F2E8DE;
+                                    &::before {
+                                        content: url(/images/Rectángulo\ 6\ 1.png);
+                                        margin-right: 2rem;
+                                        margin-left: -5rem;
+
+                                    }
+                                }
+                                input {
+                                    background-color: transparent;
+                                    border: none;
+                                    border-bottom: 2px solid $rosa;
+                                    height: 5rem;
+                                    outline: none;
+                                    color: #F2E8DE;
+                                }
+                                input[type="submit"] {
+                                    background-color: $rosa;
+                                    border-radius: 4rem;
+                                    width: 15rem;
+                                }
+                            }
+                        }
+                        .contacto--img {
+                            img {
+                                margin-right: 10rem;
                             }
                         }
                     }
                 }
-
             }
+
 
 
 
